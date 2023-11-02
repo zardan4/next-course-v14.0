@@ -17,10 +17,6 @@ export async function fetchRevenue() {
 	try {
 		const data = await sql<Revenue>`SELECT * FROM revenue`;
 		
-		console.log('waiting 3 secs')
-		await new Promise((resolve) => setTimeout(resolve, 3000));
-		console.log('waited')
-
 		return data.rows;
 	} catch (error) {
 		console.error('Database Error:', error);
