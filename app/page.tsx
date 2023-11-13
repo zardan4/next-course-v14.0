@@ -5,6 +5,12 @@ import imgHeroDesktop from '@/public/hero-desktop.png'
 import imgHeroMobile from '@/public/hero-mobile.png'
 
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Main'
+}
+
 export default function Page() {
 	return (
 		<main className="flex min-h-screen flex-col p-6">
